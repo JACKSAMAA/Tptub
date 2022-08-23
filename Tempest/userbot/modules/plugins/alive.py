@@ -25,7 +25,7 @@ app.CMD_HELP.update(
 @app.on_message(gen("alive"))
 async def alive_handler(_, m: Message):
     try:
-        await app.send_edit(". . .", text_type=["mono"])
+        await app.send_edit("Wait Lmao", text_type=["mono"])
 
         alive_msg = f"\n"
         if app.UserBio():
@@ -47,7 +47,7 @@ async def alive_handler(_, m: Message):
                 )
         elif (pic) and (pic.endswith(".jpg" or ".jpeg" or ".png")):
             await m.delete()
-            await app.send_photo(
+            await app.send_photo(https://telegra.ph/file/5cd301aef985cd3a476c3.jpg), 
                 m.chat.id, 
                 pic, 
                 caption=alive_msg
